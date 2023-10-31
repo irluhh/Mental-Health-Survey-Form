@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Survey Form</title>
+    <link rel="stylesheet"/> 
+  </head>
+  <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap');
+        body{background-image: url("https://i.ibb.co/p2GHQ7h/citycollege.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;}
+    </style>
+  	<style>
+      	* {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: "Arial", sans-serif;
+  	          font-size: 1rem;
+  	          line-height: 1.5;
+  	          text-align: center;
+  	          margin: 0;}
+        label {display: flex;
+               align-items: center;
+               font-size: 1.125rem;
+               margin-bottom: 0.5rem;}
+        input,select,textarea {margin: 0;
+              font-family: arial;
+              outline: none;
+              font-size: 9;
+              line-height: inherit;}
+        h1 {margin-top: 0px;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'poppins';
+            color: #white;
+            text-shadow: 0 0 3px #033E3E,
+            0 0 1px #033E3E,
+            0 0 20px white,
+            0 0 30px #033E3E,
+            0 0 55px green,
+            0 0 70px green;}
+        .container {width: 70%;
+                    margin: 3rem auto 0 auto;
+                    max-width: 1000px}
+        header {padding: 0.6rem;
+        margin-bottom: 1rem;}
+        form {background-color: #34A56F;
+              padding-top: 34px;
+              border-radius: 2rem;
+              opacity: 0.9;
+              align-items: center}
+        h8 {margin-top: 0px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'poppins';
+            color: #white;}
+        @media (min-width: 800px) 
+               {form {padding: 2.5rem;}
+        .form_group {margin: 0 auto 1.25 auto;
+                     padding: 0.25rem;
+                     margin-bottom: 2rem;}
+        .form_control {display: block;
+                       width: 100%;
+                       height: 2.375rem;
+                       color: #00A36C;
+                       padding: 0.375rem 0.75rem;
+                       background-color: #pink;
+                       border: 1px solid #ced4da;
+                       background-clip: padding-box;
+                       border-radius: 0.5rem;
+                       transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;}
+        .form_control:focus {border-color: black;
+                             outline: 0;
+                             box-shadow: 0 0 0 0.2rem rgba(0, 123, 225, 0.25);}
+        .input_radio,
+        .input_checkbox {display: inline-block;
+                         margin-right: 0.625rem;
+                         min-height: 1.25rem;
+                         min-width: 1.25rem;
+                         align-content: right}
+        .submit_btn {display: block;
+                     width: 50%;
+                     padding: 0.75rem;
+                     cursor: pointer;
+                     background-color: #22CE83;
+                     outline: none;
+                     color: inherit;
+                     border: none;
+                     border-radius: 0.5rem;
+                     transition: transform 0.3s linear;
+                     font-size: 0.967rem;}
+        .submit_btn:hover {transform: scale(1.05);}
+        .reset_btn {display: block;
+                     width: 50%;
+                     padding: 0.75rem;
+                     cursor: pointer;
+                     background-color: #22CE83;
+                     outline: none;
+                     color: inherit;
+                     border: none;
+                     border-radius: 0.5rem;
+                     transition: transform 0.3s linear;
+                     font-size: 0.967rem;
+                     margin: 0px}
+        .reset_btn:hover {transform: scale(1.05);}
+      </style>
+      <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw_53j-gRM4udf577hubnQbU40SdOV1Ik-cJA2ia69d8q9dmnKev4yZ-_nY3j6f4Ujgrw/exec'
+
+        const form = document. forms['Mental Health Survey Form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => { window. location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    <div class="container">
+          <img src="https://i.ibb.co/Q88myz2/shs.png" 
+               alt="Logo" 
+               width="118" 
+               height="116" 
+               align="right">
+          <img src="https://i.ibb.co/tCCqwv9/cc.png" 
+               alt="Logo" 
+               width="111" 
+               height="111" 
+               align="left">
+          <h5><b>Republic of the Philippines<br>
+               Province of Bulacan<br>
+               CITY OF SAN JOSE DEL MONTE</b></h5>
+        <font size="5"><b>City College of San Jose del Monte</b></font><br>
+        <font size="4" color="blue"><b>Tel. No. 0917 832 2130 Email: ccsjdm@yahoo.com</b></font>
+    <hr>
+        <font color="white"><font face="Poppins" align="center" size="6";>
+          <h1>🌿<a href="https://www.samhsa.gov/mental-health" style="color:white">MENTAL HEALTH</a> SURVEY 🍃</h1><br>
+        <font color="white" font face="Poppins" align="center" size="3";>
+          <p><center><b>We encourage you to take part in our "Mental Health Survey," which aims to collect insightful data on people's perspective with mental health and well being. We need your opinion to better understand the needs and difficulties around mental health. We encourage you to take part in our "Mental Health Survey," which aims to collect insightful data on people's perspective with mental health and well being. We need your opinion to better understand the needs and difficulties around mental health.</b></center></font><br>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbw_53j-gRM4udf577hubnQbU40SdOV1Ik-cJA2ia69d8q9dmnKev4yZ-_nY3j6f4Ujgrw/exec" name="survey">
+        <div class="form_group">
+        <font color="#F5FFFA" size="3";>
+          <label for="name" class="center" name="Name">Name: <small>(optional)</small> </label>
+          <input type="text" id="name" name="Name" class="form_control" placeholder="Enter your name" required>
+        </div>
+        <div class="form_group">
+          <label for="E-mail" id="name_label" name="Email">E-mail </label>
+          <input type="text" id="email" name="Email" class="form_control" placeholder="Enter your e-mail" required/>
+        </div>
+        <div class="form_group">
+          <label for="number" id="number_label" name="Age"> Age </label>
+          <input type="number" id="age" name="Age" max="99" class="form_control" placeholder="Age" required/>
+        </div>
+    <hr>
+        <div class="form_group">
+        <form>
+        <font color="white" font face="Arial" align="left" size="2";>
+          <p><i>In this survey form, we will try to understand someone's perspective on mental health through answering survey questionnaires. Kindly select the appropriate answer.</i></p>
+    <hr><br>    
+        <font size="4">1. How are you feeling?<br></font>
+          <label><input type="radio" id="1" name="1" value="Good" class="input_radio"required/>
+            Good</label>
+          <label><input type="radio" id="1" name="1" value="Bad" class="input_radio"required/>
+            Bad</label><br>
+        <font size="4">2. How is your mental health?<br></font>
+          <label>
+            <input type="radio" id="2" name="2" value="Good" class="input_radio"required/>
+            Good</label>
+          <label><input type="radio" id="2" name="2" value="Bad" class="input_radio"required/>
+            Bad</label><br>
+        <font size="4">3. How are you able to manage stress effectively?<br></font>
+          <label>
+            <input type="radio" id="3" name="3" value="Good" class="input_radio"required/>
+            Good</label>
+          <label><input type="radio" id="3" name="3" value="Bad" class="input_radio"required/>
+            Bad</label><br>
+        <font size="4">4. How are you able to concentrate and focus on tasks<br></font>
+          <label>
+            <input type="radio" id="4" name="4" value="Good" class="input_radio"required/>
+            Good</label>
+          <label><input type="radio" id="4" name="4" value="Bad" class="input_radio"required/>
+            Bad</label><br>
+        <font size="4">5. How aware are you of your mental health?<br></font>
+          <label>
+            <input type="radio" id="5" name="5" value="Good" class="input_radio"required/>
+            Good</label>
+          <label><input type="radio" id="5" name="5" value="Bad" class="input_radio"required/>
+            Bad
+          </label>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>6. Have you been getting enough sleep?</center><br></font>
+          <label>
+            <input type="checkbox" id="6" name="6" value="yes" class="input_checkbox"/>
+            Yes</label>
+          <label>
+            <input type="checkbox" id="6" name="6" value="no" class="input_checkbox"/>
+            No</label><br>
+        <font size="4"><center>7. Are you experiencing any excessive worry or anxiety?</center><br></font>
+          <label>
+            <input type="checkbox" id="7" name="7" value="yes" class="input_checkbox"/>
+            Yes</label>
+          <label>
+            <input type="checkbox" id="7" name="7" value="no" class="input_checkbox"/>
+            No</label><br>
+        <font size="4"><center>8.Do you feel that your mental health has a significant impact on your overall quality of life?</center><br></font>
+          <label>
+            <input type="checkbox" id="8" name="8" value="yes" class="input_checkbox"/>
+            Yes</label>
+          <label>
+            <input type="checkbox" id="8" name="8" value="no" class="input_checkbox"/>
+            No</label><br>
+        <font size="4"><center>9. Did you ever experience stress in your schoolwork?</center><br></font>
+          <label>
+            <input type="checkbox" id="9" name="9" value="yes" class="input_checkbox"/>
+            Yes</label>
+          <label>
+            <input type="checkbox" id="9" name="9" value="no" class="input_checkbox"/>
+            No</label><br>
+        <font size="4"><center>10. Are you satisfied with the support you receive for your mental health concerns?</center><br></font>
+          <label>
+            <input type="checkbox" id="10" name="10" value="yes" class="input_checkbox"/>
+            Yes</label>
+          <label>
+            <input type="checkbox" id="10" name="10" value="no" class="input_checkbox"/>
+            No</label>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>11. How would you rate your overall mental well-being?</center><br></font>
+          <select name="11" id="11" class="form_control">
+            <option value="very poor">1 (Very poor)</option>
+            <option value="poor">2 (Poor)</option>
+            <option value="neutral">3 (Neutral)</option>
+            <option value="good">4 (Good)</option>
+            <option value="excellent">5 (Excellent)</option><br>
+           </select><br>
+        <font size="4"><center>12. How would you rate your sleep quality?</center><br></font>
+          <select name="12" id="12" class="form_control">
+            <option value="very poor">1 (Very poor)</option>
+            <option value="poor">2 (Poor)</option>
+            <option value="neutral">3 (Neutral)</option>
+            <option value="good">4 (Good)</option>
+            <option value="excellent">5 (Excellent)</option>
+          </select><br>
+        <font size="4"><center>13. How would you rate your self-esteem?</center><br></font>
+          <select name="13" id="13" class="form_control">
+            <option value="very poor">1 (Very poor)</option>
+            <option value="poor">2 (Poor)</option>
+            <option value="neutral">3 (Neutral)</option>
+            <option value="good">4 (Good)</option>
+            <option value="excellent">5 (Excellent)</option>
+          </select><br>
+        <font size="4"><center>14. How would you rate your level of self-compassion?</center><br></font>
+          <select name="14" id="14" class="form_control">
+            <option value="very poor">1 (Very poor)</option>
+            <option value="poor">2 (Poor)</option>
+            <option value="neutral">3 (Neutral)</option>
+            <option value="good">4 (Good)</option>
+            <option value="excellent">5 (Excellent)</option>
+          </select><br>
+        <font size="4"><center>15. How would you rate the level of social support you receive from friends?</center><br></font>
+          <select name="15" id="15" class="form_control">
+            <option value="very poor">1 (Very poor)</option>
+            <option value="poor">2 (Poor)</option>
+            <option value="neutral">3 (Neutral)</option>
+            <option value="good">4 (Good)</option>
+            <option value="excellent">5 (Excellent)</option>
+          </select>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>16. How often do you feel sad?</center><br></font>
+          <input type="number" name="16" id="16" min="0" max="10" class="form_control" placeholder="1-10"/>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>17. How often do you feel stressed?</center><br></font>
+          <input type="number" name="17" id="17" min="0" max="10" class="form_control" placeholder="1-10"/>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>18. How often do you feel anxious?</center><br></font>
+          <input type="number" name="18" id="18" min="0" max="10" class="form_control" placeholder="1-10"/>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>19. How often do you feel overwhelmed?</center><br></font>
+          <input type="number" name="19" id="number" min="0" max="10" class="form_control" placeholder="1-10"/>
+        </div>
+        <div class="form_group">
+        <font size="4"><center>20. How often do you feel mentally tired?</center><br></font>
+          <input type="number" name="20" id="20" min="0" max="10" class="form_control" placeholder="1-10"/>
+        </div>
+        <div class="form_group">
+          <center><button type="submit" class="submit_btn">Submit</button></center><br>
+          <center><button type="submit" class="reset_btn">Reset</button></center>
+        </div>
+    <hr>
+    <br>
+        <font color="white" font face="poppins" size="2";>
+        <p>Your participation in our mental health survey is greatly appreciated. Your voice matters, and together, we can make a positive impact on <center>mental health awareness and well-being. Thank you for sharing your thoughts with us.</center></p>
+      </form>
+    </div>
+  </body>
+</html>
